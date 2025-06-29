@@ -3,7 +3,9 @@ import java.util.*;
 public class TextAnalyzer {
     public static void main(String[] args) {
         System.out.println("Welcome to text Analyzer");
-        String paragraph = "Education is evolving rapidly in the digital age. Online learning platforms, interactive tools, and virtual classrooms have expanded access to knowledge beyond traditional boundaries. Students can now learn at their own pace, collaborate across borders, and explore subjects in dynamic ways. Despite these advancements, challenges remain — including screen fatigue, uneven access, and the need for self-discipline. As education continues to adapt, finding ways to support meaningful engagement is more important than ever.";
+        Scanner sc = new Scanner(System.in);
+        String paragraph = sc.nextLine();
+
 
         countWords(paragraph);
         findMostFrequentWord(paragraph);
